@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 6 | Temperature Calculator</title>
+<link rel="stylesheet" href="bootstrap.min.css" /> <!--used boostrap for template-->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<div class="container">
+<form> <!--to enable user input for all contents.-->
+<div class="header"><h1>Temperature Calculator</div></h1>
+
+
+<!--####################USER INPUT AND TEMP SELECTION########################-->
+<div class="content1">
+<p id="p1">Enter a value</p>
+<div class="input-group"> <!--part of boostrap input groups-->
+<input type="number" class="form-control" id="userInput" placeholder="Enter Degree"/>
+<div class="selection">
+<select class="form-control" id="userIntDegree"> <!--select tag is used to enable drop down selection, form-control is just a part of bootstrap for design.-->
+<option value="C" selected>&deg;C</option> <!--option tag is used to define lists, kind of like <li> in <ul>-->
+<option value="F">&deg;F</option>
+<option value="K">K</option>
+</select>
+</div>
+</div>
+</div>
+<!--####################USER INPUT AND TEMP SELECTION########################-->
+
+
+
+
+
+<!--############################CONVERTER SELECTION#########################-->
+<div class="content2">
+<p id="p2">Select temperature for conversion</p>
+<div class="selection">
+<select class="form-control" id="convert">
+<option value="F" selected> Fahrenheit (&deg;F) </option>
+<option value="C">Celcius (&deg;C)</option>
+<option value="K">Kelvin (K)</option>
+</select>
+</div>
+</div>
+<!--########################################################################-->
+
+
+
+<!--############################BUTTON#################################-->
+<div class="botan">
+<button class="someBtn" type="submit"> Convert</button>
+</div>
+<!--###################################################################-->
+
+</form>
+
+<!--#####################DISPLAY RESULT#################################-->
+<div id="resultValueSection">
+<div id="placeholder-value">NaN</div><div id="convertedUnit">Deg</div>
+</div>
+</div>
+<!--####################################################################-->
+
+<img src="tumblr_neit58y0Zb1tl0lc0o1_400.gif">
+<!--imported jquery library to use jquery syntaxes-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</div>
+</body>
+</html>
